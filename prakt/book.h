@@ -16,10 +16,12 @@ class Book {
 
 
 public:
+	Book();
+
+	
 
 
-	Book(int id, string title, string author, string publisher, int yearOfPublication, int numberOfPages, int prise, bool availabilityOfHardcover);
-
+	void input();
 
 
 
@@ -27,3 +29,23 @@ public:
 
 };
 
+class Audiobook{
+
+	int id;
+	string title;
+	string author;
+	string publisher;
+	int yearOfPublication;
+	int recordingDuration;
+	int prise;
+	string audioFileFormat;
+public:
+
+	Audiobook();
+
+	void input();
+
+	void print();
+
+
+};
