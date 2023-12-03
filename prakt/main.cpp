@@ -9,10 +9,11 @@ int main() {
 	string author;
 	string publisher;
 	int yearOfPublication;
+	int recordingDuration;
 	int numberOfPages;
 	int prise;
 	bool availabilityOfHardcover;
-
+	string audioFileFormat;
 
 
 
