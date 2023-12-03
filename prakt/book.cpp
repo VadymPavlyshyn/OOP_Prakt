@@ -29,8 +29,8 @@ void Book::print() {
 	cout << "номер сторінки" << " " << numberOfPages << endl;
 	cout << "ціна          " << " " << prise << endl;
 	if (this->availabilityOfHardcover)
-		cout << "З твердою обкладинкою.\n" << endl;
+		cout << "З твердою обкладинкою\n" << endl;
 	else
-		cout << "З м'якою обкладинкою.\n" << endl;
+		cout << "З м'якою обкладинкою\n" << endl;
 
 };
