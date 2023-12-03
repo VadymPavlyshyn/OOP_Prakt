@@ -29,7 +29,7 @@ int main() {
 	cin >> yearOfPublication;
 	cout << "Кількість сторінок" << endl;
 	cin >> numberOfPages;
-	cout << "ціна" << endl;
+	cout << "Ціна" << endl;
 	cin >> prise;
 	cout << "Наявність тверої обкладинки  true/false" << endl;
 	cin >> availabilityOfHardcover;
