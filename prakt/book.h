@@ -27,3 +27,19 @@ public:
 
 };
 
+class Audiobook {
+	int id;
+	string title;
+	string author;
+	string publisher;
+	int yearOfPublication;
+	int recordingDuration;
+	int prise;
+	string audioFileFormat;
+
+public:
+
+	Audiobook(int id, string title, string author, string publisher, int yearOfPublication, int recordingDuration, int prise, string audioFileFormat );
+
+
+};
