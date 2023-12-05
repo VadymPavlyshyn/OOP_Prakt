@@ -3,43 +3,43 @@
 #include <string>
 using namespace std;
 
-
 class Book {
-	int id;
-	string title;
-	string author;
-	string publisher;
-	int yearOfPublication;
-	int numberOfPages;
-	int prise;
-	bool availabilityOfHardcover;
-
+    int id;
+    string title;
+    string author;
+    string publisher;
+    int yearOfPublication;
+    int numberOfPages;
+    int prise;
+    bool availabilityOfHardcover;
 
 public:
+    Book();
 
+    void input();
 
-	Book(int id, string title, string author, string publisher, int yearOfPublication, int numberOfPages, int prise, bool availabilityOfHardcover);
-
-
-
-
-	void print();
-
+    void print();
 };
 
+
+
 class Audiobook {
-	int id;
-	string title;
-	string author;
-	string publisher;
-	int yearOfPublication;
-	int recordingDuration;
-	int prise;
-	string audioFileFormat;
+
+    int id;
+    string title;
+    string author;
+    string publisher;
+    int yearOfPublication;
+    int recordingDuration;
+    int prise;
+    string audioFileFormat;
 
 public:
+    Audiobook();
 
-	Audiobook(int id, string title, string author, string publisher, int yearOfPublication, int recordingDuration, int prise, string audioFileFormat );
+
+    void input();
 
 
+    void print();
 };
