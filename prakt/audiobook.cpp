@@ -5,7 +5,7 @@
 using namespace std;
 
 
-Audiobook::Audiobook() : id(0), title(""), author(""), publisher(""), yearOfPublication(0), recordingDuration(0), prise(0), audioFileFormat("") {};
+
 
 
 
@@ -43,4 +43,3 @@ void Audiobook::print() {
 	cout << "ціна                  " << " " << prise << endl;
 	cout << "формат аудіо файлу    " << " " << audioFileFormat << endl;
 };
-

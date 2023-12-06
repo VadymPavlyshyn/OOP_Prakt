@@ -1,45 +1,40 @@
+
 #pragma once
 #include <iostream>
 #include <string>
 using namespace std;
 
+
 class Book {
-    int id;
-    string title;
-    string author;
-    string publisher;
-    int yearOfPublication;
-    int numberOfPages;
-    int prise;
-    bool availabilityOfHardcover;
+protected:
+	int id;
+	string title;
+	string author;
+	string publisher;
+	int yearOfPublication;
+	int numberOfPages;
+	int prise;
+	bool availabilityOfHardcover;
 
 public:
-    Book();
+	void input();
 
-    void input();
+	void print();
 
-    void print();
 };
 
 
 
-class Audiobook {
 
-    int id;
-    string title;
-    string author;
-    string publisher;
-    int yearOfPublication;
-    int recordingDuration;
-    int prise;
-    string audioFileFormat;
+
+
+class Audiobook : public Book {
+	int recordingDuration;
+
+	string audioFileFormat;
 
 public:
-    Audiobook();
 
-
-    void input();
-
-
-    void print();
+	void input();
+	void print();
 };
