@@ -5,20 +5,21 @@ using namespace std;
 
 
 class Book {
-	int id;
-	string title;
-	string author;
-	string publisher;
-	int yearOfPublication;
-	int numberOfPages;
-	int prise;
-	bool availabilityOfHardcover;
-
+protected:
+    int id;
+    string title;
+    string author;
+    string publisher;
+    int yearOfPublication;
+    int numberOfPages;
+    int prise;
+    bool availabilityOfHardcover;
 
 public:
+    void input();
 
 
-	Book(int id, string title, string author, string publisher, int yearOfPublication, int numberOfPages, int prise, bool availabilityOfHardcover);
+	
 
 
 
@@ -27,19 +28,19 @@ public:
 
 };
 
-class Audiobook {
-	int id;
-	string title;
-	string author;
-	string publisher;
-	int yearOfPublication;
-	int recordingDuration;
-	int prise;
-	string audioFileFormat;
+
+
+
+
+
+class Audiobook : public Book {
+    int recordingDuration;
+  
+    string audioFileFormat;
 
 public:
-
-	Audiobook(int id, string title, string author, string publisher, int yearOfPublication, int recordingDuration, int prise, string audioFileFormat );
-
-
+    
+    void input();
+    void print();
 };
+

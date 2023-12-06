@@ -130,6 +130,7 @@
     <ClInclude Include="book.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="audiobook.cpp" />
     <ClCompile Include="book.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>

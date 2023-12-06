@@ -5,15 +5,27 @@ using namespace std;
 
 
 
-Book::Book(int id, string title, string author, string publisher, int yearOfPublication, int numberOfPages, int prise, bool availabilityOfHardcover) {
-	this->id = id;
-	this->title = title;
-	this->author = author;
-	this->publisher = publisher;
-	this->yearOfPublication = yearOfPublication;
-	this->numberOfPages = numberOfPages;
-	this->prise = prise;
-	this->availabilityOfHardcover = availabilityOfHardcover;
+
+
+void Book::input() {
+	cout << "Запис книги" << endl;
+	cout << "id" << endl;
+	cin >> id;
+	cout << "Назва" << endl;
+	cin >> title;
+	cout << "Автор" << endl;
+	cin >> author;
+	cout << "Видавництво" << endl;
+	cin >> publisher;
+	cout << "Рік публікації" << endl;
+	cin >> yearOfPublication;
+	cout << "Кількість сторінок" << endl;
+	cin >> numberOfPages;
+	cout << "Ціна" << endl;
+	cin >> prise;
+	cout << "Наявність тверої обкладинки  true/false" << endl;
+	cin >> availabilityOfHardcover;
+	
 };
 
 
