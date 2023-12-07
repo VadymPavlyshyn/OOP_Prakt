@@ -17,9 +17,9 @@ protected:
 	bool availabilityOfHardcover;
 
 public:
-	void input();
+	virtual void input();
 
-	void print();
+	virtual void print();
 
 };
 
@@ -35,6 +35,6 @@ class Audiobook : public Book {
 
 public:
 
-	void input();
-	void print();
+	void input() override;
+	void print() override;
 };
