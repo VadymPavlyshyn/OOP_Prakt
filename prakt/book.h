@@ -14,13 +14,11 @@ protected:
 	int yearOfPublication;
 	int numberOfPages;
 	int prise;
-	bool availabilityOfHardcover;
+	string availabilityOfHardcover;
 
 public:
 	virtual void input();
-
 	virtual void print();
-
 };
 
 
@@ -30,11 +28,9 @@ public:
 
 class Audiobook : public Book {
 	int recordingDuration;
-
 	string audioFileFormat;
 
 public:
-
 	void input() override;
 	void print() override;
 };

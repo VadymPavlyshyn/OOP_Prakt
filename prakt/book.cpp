@@ -23,7 +23,7 @@ void Book::input() {
 	cin >> numberOfPages;
 	cout << "Ціна" << endl;
 	cin >> prise;
-	cout << "Наявність тверої обкладинки  true/false" << endl;
+	cout << "Наявність тверої обкладинки  Так/ні" << endl;
 	cin >> availabilityOfHardcover;
 
 };
@@ -32,19 +32,6 @@ void Book::input() {
 
 
 void Book::print() {
-
-	cout << endl;
-	cout << "Книга" << endl;
-	cout << "id            " << " " << id << endl;
-	cout << "назва книги   " << " " << title << endl;
-	cout << "автор         " << " " << author << endl;
-	cout << "видавництво   " << " " << publisher << endl;
-	cout << "рік публікації" << " " << yearOfPublication << endl;
-	cout << "номер сторінки" << " " << numberOfPages << endl;
-	cout << "ціна          " << " " << prise << endl;
-	if (this->availabilityOfHardcover)
-		cout << "З твердою обкладинкою\n" << endl;
-	else
-		cout << "З м'якою обкладинкою\n" << endl;
+	cout <<"\t\t  " << id << "\t" << title << "\t " << author << "\t  " << publisher << "\t\t " << yearOfPublication << "\t\t   " << numberOfPages << "\t\t\t" << prise << "\t" << availabilityOfHardcover << endl;
 
 };

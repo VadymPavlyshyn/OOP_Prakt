@@ -32,14 +32,5 @@ void Audiobook::input() {
 
 
 void Audiobook::print() {
-	cout << endl;
-	cout << "Аудіо книга" << endl;
-	cout << "id                    " << " " << id << endl;
-	cout << "назва аудіо книги     " << " " << title << endl;
-	cout << "автор                 " << " " << author << endl;
-	cout << "видавництво           " << " " << publisher << endl;
-	cout << "рік публікації        " << " " << yearOfPublication << endl;
-	cout << "Тривалість запису     " << " " << recordingDuration << endl;
-	cout << "ціна                  " << " " << prise << endl;
-	cout << "формат аудіо файлу    " << " " << audioFileFormat << endl;
+	cout << "\t\t  " << id << "\t" << title << "\t " << author << "\t  " << publisher << "\t\t "<< yearOfPublication << "\t\t   " << recordingDuration << "\t\t\t" << prise << "\t" << audioFileFormat << endl;
 };
