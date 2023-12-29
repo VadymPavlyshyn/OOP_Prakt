@@ -34,3 +34,26 @@ public:
 	void input() override;
 	void print() override;
 };
+
+
+
+template <typename T>
+class Vector {
+	T array[10];
+	int size;
+	int capacity;
+public:
+
+	Vector() : size(0), capacity(10) {}
+
+	int getSize(){
+		return size;
+	}
+
+	int getCapacity(){
+		return capacity;
+	}
+
+	
+
+};
